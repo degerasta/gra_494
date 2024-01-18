@@ -142,6 +142,15 @@ p.copyright {
     color: #333333;
 }
 
+.shop-img {
+    max-width: 500px;
+}
+
+fa-regular fa-heart {
+    color: black;
+    font-size: 50pt;
+}
+
 
 /* Breakpoint */
 @media screen and (max-width: 700px) {
