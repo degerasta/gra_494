@@ -146,9 +146,27 @@ p.copyright {
     max-width: 500px;
 }
 
+.shopping-image-div {
+    position: relative;
+    background-size: cover;
+    justify-content: right;
+    align-items: left;
+}
+
+.shopping-image-div img {
+    display: block;
+    height: 600px;
+}
+
+.shopping-image-div span {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
 fa-regular fa-heart {
     color: black;
-    font-size: 50pt;
+    font-size: 76px;
 }
 
 
