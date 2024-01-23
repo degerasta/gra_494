@@ -19,10 +19,18 @@
     <p><a href="index.html">All Molecules</a></p>
     
     <div>
-      <h2>Button</h2>
-      <a class="btn index" href="/collections" data-page-transition="internal">Shop Now</a>
+      <h2>Search Input + Icon</h2>
+      
+      <form class="search-form" action="/search" method="get" role="search">
+        <input type="hidden" name="type" value="product">
+        <input id="searchInput" type="search" name="q" placeholder="Search" value="">
+        <label class="searchIcon" for="searchInput">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </form>
+
       <p>
-        This is a button.
+        This is a search input.
       </p>
     </div>
   </section>
