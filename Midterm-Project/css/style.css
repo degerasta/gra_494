@@ -42,6 +42,12 @@ a {
 a:hover {
 	color: #848b95;
 }
+
+.gallery-element a:hover {
+    color: #ededed;
+    text-decoration: underline;
+}
+
 code, pre {
 	background-color: #22262a;
 	color: #EDEDED;
@@ -219,7 +225,7 @@ p.copyright {
 
 .fa-regular .fa-heart {
     color: black;
-    font-size: 76px;
+    font-size: 36px;
 }
 
 form.search-form {
@@ -279,6 +285,74 @@ form.search-form input {
     position: absolute;
     left: 14px;
     top: 14px;
+}
+
+.shop-gallery {
+    display: flex;
+    background: white;
+    padding: 0rem 1rem;
+    margin: 0;
+}
+
+.shop-gallery .shopping-image-div {
+    width: auto;
+    margin: 0rem .25rem;
+}
+
+.shop-gallery .shopping-image-div img {
+    display: block;
+}
+
+.shop-gallery .shopping-image-div span {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+
+.shop-gallery h2 {
+    font-family: Futura PT, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    height: auto;
+    letter-spacing: 1px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 1rem;
+}
+
+.shop-gallery p {
+    font-family: Futura PT, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    height: auto;
+    letter-spacing: 1px;
+    line-height: 10px;
+    color: gray;
+}
+
+.shop-gallery-title {
+    background: white;
+    margin: 0;
+    align-items: center;
+}
+
+.shop-gallery-title h2 {
+    color: black;
+    text-align: center;
+    font-weight: 100;
+    
+}
+
+.shop-gallery-title h1 {
+    color: black;
+    text-align: center;
+    line-height: 24px;
+}
+
+.organism-wrapper {
+    background: white;
+    padding: 2rem 0rem;
 }
 
 
