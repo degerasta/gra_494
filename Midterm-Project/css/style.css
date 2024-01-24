@@ -1,6 +1,6 @@
 /* Default */
 body {
-	width: 100%;
+    width: 100%;
 	margin: 0;
 	padding: 0;
 	height: auto;
@@ -59,6 +59,7 @@ code, pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
 img {
 	width: 100%;
 	height: auto;
@@ -134,21 +135,90 @@ div {
     margin-bottom: 0;
 }
 
+.organism-wrapper h2 {
+    font-family: Futura PT,Arial,sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.44px;
+    font-weight: 700;
+    line-height: 1.85;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: black;
+}
+
+.organism-wrapper p {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: black;
+}
+
+.organism-wrapper .description {
+    color: gray;
+}
+
+.email-footer .description a {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: gray;
+    text-decoration: underline;
+}
+
 .gallery-element {
-    background-image: url("../img/GradGift.jpeg");
     background-size: cover;
     width: 300px;
     height: 400px;
-    opacity: 0.5;
-    transition: opacity .5s ease, .5s ease;
     padding: 5 rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#img-1 {
+    background-image: url("../img/GradGift.jpeg");
+    opacity: 0.7;
+    transition: opacity .5s ease, .5s ease;
+}
+
+#img-2 {
+    background-image: url("../img/LubDub.jpeg");
+    opacity: 0.7;
+    transition: opacity .5s ease, .5s ease;
+}
+
+#img-3 {
+    background-image: url("../img/HeartRings.jpeg");
+    opacity: 0.7;
+    transition: opacity .5s ease, .5s ease;
+}
+
 .gallery-element:hover {
     opacity: 1.0;
+}
+
+.shopping-img-div {
+    width: 10%;
+}
+
+#img-2:hover {
+    opacity: 1.0;
+}
+
+#img-1:hover {
+    opacity: 1.0;
+}
+
+#img-3:hover {
+    opacity: 1.0;
+}
+
+.shopping-img-div {
+    display: block;
 }
 
 .description {
@@ -299,6 +369,10 @@ form.search-form input {
     margin: 0rem .25rem;
 }
 
+.shop-gallery .shopping-image-div a {
+    text-align: center;
+}
+
 .shop-gallery .shopping-image-div img {
     display: block;
 }
@@ -353,6 +427,26 @@ form.search-form input {
 .organism-wrapper {
     background: white;
     padding: 2rem 0rem;
+}
+
+.logos {
+    display: flex;
+    margin: 2rem 0.5rem;
+}
+
+.logos img {
+    height: 15px;
+    opacity: 50%;
+    margin: 0rem 1rem;
+}
+
+.footer-block {
+    display: flex;
+}
+
+.footer-block .input {
+    width: 150px;
+    padding-left: 1rem;
 }
 
 
