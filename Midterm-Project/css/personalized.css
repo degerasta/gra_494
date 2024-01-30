@@ -43,6 +43,11 @@ a:hover {
 	color: #848b95;
 }
 
+.gallery-element a:hover {
+    color: #ededed;
+    text-decoration: underline;
+}
+
 code, pre {
 	background-color: #22262a;
 	color: #EDEDED;
@@ -81,9 +86,28 @@ div {
     text-transform: uppercase;
 }
 
+.personalized-subSection .btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: lowercase;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgb(60, 16, 206);
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
 .btn:hover {
 	background-color: white;
     color: black; 
+}
+
+.personalized-subSection .btn:hover {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    color:rgb(60, 16, 206);
+
 }
 
 .input {
@@ -104,6 +128,15 @@ div {
     text-transform: uppercase;
 }
 
+.personalized-subSection .input {
+    font-family: Poppins, sans-serif;
+    text-transform: lowercase;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    margin-right: .5rem;
+}
+
 .email-entry {
     padding: 0;
     margin: 0;
@@ -120,6 +153,21 @@ div {
     margin-top: 0;
 }
 
+.personalized-subSection .h1-content-area__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: normal;
+    font-family: Poppins, sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.personalized-subSection .h1-content-area__title span {
+    background-color:rgb(231, 170, 0);
+    padding: 0px 8px;
+}
+
 .h2-gallery {
     font-family: Futura PT,Arial,sans-serif;
     font-size: 14px;
@@ -128,6 +176,11 @@ div {
     line-height: 1.85;
     text-transform: uppercase;
     margin-bottom: 0;
+}
+
+.personalized-subSection .h2-gallery {
+    font-size: 20px;
+    color: white;
 }
 
 .organism-wrapper h2 {
@@ -164,21 +217,76 @@ div {
     text-decoration: underline;
 }
 
+.gallery-element {
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    padding: 5 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.personalized-subSection .gallery-element {
+    width: 300px;
+    height: 300px;
+}
 
 #img-1 {
     background-image: url("../img/GradGift.jpeg");
+    opacity: 0.7;
+    transition: opacity .5s ease, .5s ease;
 }
 
 #img-2 {
     background-image: url("../img/LubDub.jpeg");
+    opacity: 0.7;
+    transition: opacity .5s ease, .5s ease;
 }
 
 #img-3 {
     background-image: url("../img/HeartRings.jpeg");
+    opacity: 0.7;
+    transition: opacity .5s ease, .5s ease;
 }
 
+.personalized-subSection #img-1 {
+    background-image: url("../img/widgets-collage.jpeg");
+    border-radius: 40px;
+    opacity: .5;
+}
 
+.personalized-subSection #img-1 a:hover {
+    text-decoration: none;
+    background-color: rgb(60, 16, 206);
+    opacity: 1;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.gallery-element:hover {
+    opacity: 1.0;
+}
+
+.shopping-img-div {
+    width: 10%;
+}
+
+#img-2:hover {
+    opacity: 1.0;
+}
+
+#img-1:hover {
+    opacity: 1.0;
+}
+
+#img-3:hover {
+    opacity: 1.0;
+}
+
+.shopping-img-div {
+    display: block;
+}
 
 .description {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -186,6 +294,29 @@ div {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0px;
+}
+
+.personalized-subSection .description {
+    font-family: Poppins, sans-serif;
+    color: rgb(152, 163, 255);
+}
+
+.personalized-subSection img {
+    border-radius: 30px;;
+}
+
+.personalized-subSection .mobile-search .fa-magnifying-glass {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.personalized-subSection .fa-star {
+    border: 1px solid transparent;
+    background-color: rgb(255, 221, 0);
+    color: #13172b;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .custom-select {
@@ -201,7 +332,7 @@ div {
 }
 
 section.main {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -221,9 +352,26 @@ section.main {
     font-size: 14px;
 }
 
+.personalized-subSection .link-cta {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1.5;
+    padding-bottom: 1px;
+    border-color: rgb(255, 221, 0);
+}
+
+
 .subSection {
 	background-color: #605ba8;
     padding: 1rem;
+    margin-top: 2rem;
+}
+
+.personalized-subSection {
+	background-color: #13172b;
+    padding: 1rem 3rem;
     margin-top: 2rem;
 }
 
@@ -242,23 +390,11 @@ p.copyright {
 .shopping-image-div {
     position: relative;
     background-size: cover;
-    opacity: 0.7;
-    transition: opacity .5s ease, .5s ease;
-    padding: 5 rem;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
+    justify-content: right;
+    align-items: left;
 
-.shopping-img-div:hover {
-    opacity: 1.0;
+    max-width: 400px;
 }
-
-.shopping-image-div a:hover {
-    color: #ededed;
-    text-decoration: underline;
-}
-
 
 .shopping-image-div img {
     display: block;
@@ -268,6 +404,12 @@ p.copyright {
     position: absolute;
     top: 3rem;
     right: 3rem;
+}
+
+.personalized-subSection .shopping-image-div span {
+    position: absolute;
+    top: 2rem;
+    right: 3.5rem;
 }
 
 .fa-regular .fa-heart {
@@ -316,6 +458,11 @@ form.search-form input {
     text-transform: uppercase;
 }
 
+.personalized-subSection form.search-form input {
+    border: 0px solid transparent;
+    border-radius: 40px;
+}
+
 #searchInput {
     font-family: Futura PT, Arial, sans-serif;
     font-size: 15px;
@@ -326,6 +473,13 @@ form.search-form input {
     outline: none;
     outline-style: none;
     outline-width: 0px;
+}
+
+.personalized-subSection #searchInput {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-transform: lowercase;
+    letter-spacing: .75;
 }
 
 .searchIcon {
@@ -339,13 +493,6 @@ form.search-form input {
     background: white;
     padding: 0rem 1rem;
     margin: 0;
-    
-    justify-content: center; 
-    align-items: stretch;    
-
-    height: 400px;
-    padding: 15px;
-    gap: 5px;
 }
 
 .shop-gallery .shopping-image-div {
