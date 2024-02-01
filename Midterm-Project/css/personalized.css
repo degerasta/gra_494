@@ -17,14 +17,18 @@ body {
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+    font-variation-settings: "wdth" 100;
+}
 
 
 h1,h2,h3,p,ol,ul,li,a {
 	font-family: "Poppins", sans-serif;
 }
+
+nav ul {
+    list-style: none;
+}
+
 h1,h2,h3 {
 	font-family: "Poppins", sans-serif;
 	color: #EDEDED;
@@ -33,6 +37,7 @@ h2 {
 	font-family: "Poppins", sans-serif;
 	font-size: 1.3em;
 }
+
 a {
 	font-weight: bold;
 	color: #EDEDED;
@@ -47,6 +52,113 @@ a:hover {
     color: #ededed;
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+/* from gra322 proj 3 */
+
+
+header {
+    margin: 0 auto;
+    /* max-width: 1280px; */
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header h2 {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+nav {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+    font-weight: 400;
+}
+
+nav ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none; 
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.hero {
+    height: 625px;
+    margin-bottom: 3rem;
+    background-color:rgb(146, 210, 159);
+}
+
+.hero h1 {
+    justify-content: left;
+    text-align: left;
+    position: absolute;
+    bottom: 12rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 80vw;
+    color: rgb(0, 0, 0);
+    background-color: rgb(214,242,226,0.4);
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.hero img {
+    max-width: 900px;
+    justify-content: right;
+    align-items: right;
+    float: right;
+    margin-top: 4rem;
+    border-radius: 0;
+}
+
+.menu-button {
+    background-color: #13172b;
+    border: 1px solid transparent;
+    padding: 2rem 2rem 1rem 0rem;
+    line-height: 0;
+}
+
+.fa-bars {
+    font-size: 30px;
+    padding: 0 1rem 1rem 0;
+    color: white;
+    
+}
+
+
+.intro {
+    /* bottom: 0;*/
+    /* left: 0;*/
+    padding: 1rem;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
 
 code, pre {
 	background-color: #22262a;
@@ -376,6 +488,13 @@ section.main {
     margin-top: 2rem;
 }
 
+.personalized-subSection header {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 p.copyright {
 	margin: 0 auto;
@@ -583,8 +702,28 @@ form.search-form input {
 
 
 /* Breakpoint */
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 1000px) {
 	section.main {
 		margin: 5rem 2rem;
 	}
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+        max-height: 200px;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 1rem 0rem 0rem;
+    }
+
+    .menu-wrapper li {
+        padding: 1rem;
+    }
 }
