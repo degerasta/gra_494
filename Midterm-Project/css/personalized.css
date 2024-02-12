@@ -53,6 +53,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.nav-logo {
+    display: block;
+    width: 200px;
+    height: 58px;
+    padding: 1rem;
+}
 
 
 
@@ -495,7 +501,7 @@ p.copyright {
 	margin: 0 auto;
 	margin-bottom: 0.5em;
     text-align: center;
-    color: #333333;
+    color: #ffffff;
 }
 
 .shop-img {
@@ -692,6 +698,17 @@ form.search-form input {
 
 .footer-block .input {
     width: 150px;
+    padding-left: 1rem;
+}
+
+footer {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.footlinks h3 {
+    display: inline;
     padding-left: 1rem;
 }
 
