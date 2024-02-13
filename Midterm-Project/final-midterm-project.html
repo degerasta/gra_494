@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   
-  <title>monday.com</title>
+  <title>Midterm Project | monday.com</title>
   <link rel="icon" type="image/x-icon" href="img/monday-brandmark-2.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/personalized.css">
+  <link rel="stylesheet" href="css/midterm.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4908cdfa67.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 
@@ -30,7 +31,7 @@
 
 
 
-<body class="personalized-subSection"  style="padding: 0; margin: 0;">
+<body>
 
 
 <header>
@@ -43,13 +44,13 @@
     <nav>
         <ul>
         <li>
-            <a href="#" title="History">History</a>
+            <a href="https://monday.com/pricing" title="Pricing">Pricing</a>
         </li><li>
-            <a href="" title="Articles">Articles</a>
+            <a href="https://monday.com/sales/contact-us?from=header&source=Website%20-%20Contact%20Sales" title="Contact Sales">Contact Sales</a>
         </li><li>
-            <a href="#" title="Research">Research</a>
+            <a href="https://auth.monday.com/auth/login_monday/" title="Log In">Log In</a>
         </li><li>
-            <a class="btn index" href="https://instagram.com" data-page-transition="internal">go there</a>
+            <button class="btn index" href="https://auth.monday.com/users/sign_up_new?origin=hp_fullbg_page_header" data-page-transition="internal">Get Started  <i class="fa-solid fa-arrow-right" style="margin-left: .5rem;"></i></button>
         </li>
         </ul> 
     </nav>
@@ -57,7 +58,7 @@
 
 
 <div class="hero">
-    <h1 class="intro">A platform built for a new way of working</h2>
+    <h1 class="intro">A platform built for a new way of working</h1>
     <img src="img/monday-head.png" alt="">
 </div>
 
@@ -69,29 +70,30 @@
 
     <section>
 
-        <img src="img/logo-evolution.jpeg">
+        <img class="full-img" src="img/monday-background.png">
 
     </section>
     
 
     <section class="callout">
     
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet this is body text</p>
-        <a class="btn index" href="/collections" data-page-transition="internal">learn more</a>
+        <h2 class="section-h2">The Work OS that lets you shape workflows, your way</h2>
+        <p>Trusted by 180,000+ customers worldwide. Boost your team’s alignment, efficiency, and productivity by customizing any workflow to fit your needs.</p>
+        <button class="btn index" href="/collections" data-page-transition="internal">Get Started  <i class="fa-solid fa-arrow-right" style="margin-left: .5rem;"></i></button>
     
     </section>
 
 
-    <section class="highlight">
+    <section class="highlight" id="highlight-1">
 
         <div>
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet this is body text.</p>
+            <h2>From idea to execution. Work efficiently and see results.</h2>
+            <p>From setting goals to navigating projects, processes, and everyday tasks monday work management is an organized and collaborative way of working — so work just works. Plan and manage the strategic side of work down to everyday tasks
+                with intuitive work management software. Get started with features designed to build powerful workflows to support your unique needs.</p>
         </div>
 
         <div>
-            <img src="" alt="">
+            <img src="img/monday-highlight.png" alt="">
         </div>
 
     </section>
@@ -105,50 +107,67 @@
 
 
 
-<section class="shop">
+<section class="grid">
 
-    <h2>Explore Widgets</h2>
+    <h2 class="section-h2">Why monday?</h2>
 
-    <figure>
-        <img src="" alt=""/>
-        <p>Lorem Ipsum</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a class="btn index" href="/collections" data-page-transition="internal">download</a>
-    </figure>
+    <div class="grid-inner">
+        <figure>
+            <img src="" alt=""/>
+            <h2>Streamline your work for maximum productivity</h2>
+            <p>Centralize all your work, processes, tools, and files into one Work OS. Connect teams, bridge silos, and maintain one source of truth across your organization.</p>
+            <button class="btn index" href="/collections" data-page-transition="internal">View Tutorials</button>
+        </figure>
 
-    <figure>
-        <img src="" alt=""/>
-        <p>Lorem Ipsum</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a class="btn index" href="/collections" data-page-transition="internal">download</a>
-    </figure>
+        <figure>
+            <img src="" alt=""/>
+            <h2>Bring teams together to drive business impact</h2>
+            <p>Collaborate effectively organization-wide to get a clear picture of all your work. Stay in the loop with easy-to-use automations and real-time notifications.</p>
+            <button class="btn index" href="/collections" data-page-transition="internal">Reports</button>
+        </figure>
 
-    <figure>
-        <img src="" alt=""/>
-        <p>Lorem Ipsum</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a class="btn index" href="/collections" data-page-transition="internal">download</a>
-    </figure>
+        <figure>
+            <img src="" alt=""/>
+            <h2>Stay on track to reach your goals, faster</h2>
+            <p>Get a high-level overview of your organization with customizable dashboards. Make confident decisions and easily scale workflows for your evolving needs.</p>
+            <button class="btn index" href="/collections" data-page-transition="internal">Get Started<i class="fa-solid fa-arrow-right" style="margin-left: .5rem;"></i></button>
+        </figure>
 
-    <figure>
-        <img src="" alt=""/>
-        <p>Lorem Ipsum</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a class="btn index" href="/collections" data-page-transition="internal">download</a>
-    </figure>
-
+        <figure>
+            <img src="" alt=""/>
+            <h2>Everything you need for any workflow</h2>
+            <p>Everything starts with a visual board — the core of monday.com Work OS. Tailor it your way and manage anything from projects to departments.</p>
+            <button class="btn index" href="/collections" data-page-transition="internal">Customize Yours</button>
+        </figure>
+    </div>
   
 
 </section>
 
 
-<section class="highlight">
+<section class="highlight" id="highlight-2">
 
-    <!--EMBED VIDEO HERE -->
+    <div class="video-lightbox">
+
+        <a class="lightbox" href="#cover">
+            <img src="img/video-placeholder.png" />
+        </a>
+        <div class="lightbox-target" id="cover">
+            <iframe class="vid" src="https://www.youtube.com/embed/T3qH-uY3t-Y?si=wsXFDjVTLovVsOiL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <a class="lightbox-close" href="#"></a>
+        </div>
+
+    </div>
 
     <div>
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet this is body text.</p>
+        <h2>Everything You Can Do With monday.com</h2>
+        <p>It’s no secret that we think monday.com is the best work management platform around — and that’s in part because of its intuitive, user-friendly interface. But that being said, it’s still worthwhile to know exactly how you can get the most out of the platform.
+
+            That’s why we at monday.com have put together this step-by-step tutorial for learning to navigate our software. We’ll walk through best practices for setting up the platform, customizing templates, and collaborating with your team.</p>
     </div>
 
 </section>
@@ -159,8 +178,8 @@
     <img class="nav-logo" src="img/monday-logo-200.png">
     <p class="copyright">&copy; 2023 Copyright</p>
     <div class="footlinks">
-        <h3>Footlink1</h3>
-        <h3>Footlink2</h3>
+        <h3>Contact</h3>
+        <h3>About</h3>
     </div>
 </footer>
 
