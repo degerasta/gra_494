@@ -47,7 +47,8 @@ a {
     text-decoration: none;
 }
 a:hover {
-	color: #848b95;
+	color: rgb(60, 16, 206);
+    border-bottom: white 1px solid;
 }
 
 .gallery-element a:hover {
