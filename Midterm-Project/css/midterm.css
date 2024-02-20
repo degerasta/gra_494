@@ -334,16 +334,19 @@ figure {
     border-radius: 20px;
     padding: 2rem 1.5rem;
     margin: 3rem 1rem;
-    background-color: rgba(72, 87, 225, 0.3);
+    background-color: rgba(72, 87, 225, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all .3s ease-in-out;
 }
 
 figure:hover {
     cursor: pointer;
     transform: scale(1.06);
-    transition: all .3s ease-out;
+    transition: all .3s ease-in-out;
+    background-color: rgba(72, 87, 225, 0.4);
+    /*box-shadow: 0 0 20px 5px #4a38d0;*/
 }
 
 figure button {
@@ -375,12 +378,15 @@ iframe {
     align-items: center;
     margin-top: 18vh;
     cursor: pointer;
+}
 
+.video-lightbox a:hover {
+    border-bottom: white 0px solid;
 }
 
 .video-lightbox {
     text-align: center;
-    
+
 }
     
 .lightbox-target {
@@ -411,7 +417,7 @@ iframe {
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-      
+   
 }
 
 a.lightbox-close {
