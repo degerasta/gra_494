@@ -26,4 +26,4 @@ This site builds off of the previous exercises within the midterm project: atomi
 
 - **Google Fonts**: Loaded the 'Poppins' font family for typography.
 - **Font Awesome Icons**: Loaded Font Awesome in the `<head>` tag for arrow icons.
-- **YouTube Embed**: Embedded a YouTube video to showcase introductory content.
+- **YouTube Embed**: Embedded a YouTube video to showcase a walkthrough of the product's best features amd uses.
