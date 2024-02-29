@@ -285,16 +285,6 @@ div {
 }
 
 
-.email-footer .description a {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0px;
-    color: gray;
-    text-decoration: underline;
-}
-
 .gallery-element {
     background-size: cover;
     width: 300px;
@@ -305,6 +295,18 @@ div {
     align-items: center;
     width: 300px;
     height: 300px;
+}
+
+.lightbox img:hover {
+    transform: scale(1.06);
+    transition: all .3s ease-in-out;
+    opacity: 1.0;
+}
+
+.lightbox img {
+    transition: all .3s ease-in-out;
+    border-radius: 35px;
+    opacity: 0.7;
 }
 
 
@@ -322,7 +324,7 @@ div {
     background-color: rgb(42, 51, 113);
     transform: translate(-50%, 10%);
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     padding: 20px;
     resize: both;
@@ -379,7 +381,7 @@ figure:hover {
 
 figure button {
     margin-top: 1rem;
-    align-self: flex-end;
+    align-self: center;
 }
 
 
@@ -520,21 +522,26 @@ a.lightbox-close:after {
 
 
 .highlight {
-    padding: 4rem;
+    padding: 4rem 5rem;
+}
+
+#highlight-1 {
+    margin-top: 40rem;
 }
 
 
-#highlight-2 img {
-    padding: 1rem;
+#highlight-2 {
+    padding: 3rem;
 }
 
 #highlight-2 h2 {
-    margin-left: 2rem;
-    margin-top: 1rem;
+    padding: 2rem 0rem 0rem 0rem;
+    margin: 0;
 }
 
 #highlight-2 p {
-    margin-left: 2rem;
+    padding: 2rem 2rem 0rem 0rem;
+    margin: 0;
 }
 
 
@@ -553,7 +560,12 @@ footer {
     padding-left: 1rem;
     font-weight: 200;
     font-size: 12pt;
-    line-height: 1;
+    line-height: 2;
+    margin: 0;
+}
+
+.footlinks {
+    padding-top: 2rem;
 }
 
 footer img {
@@ -569,7 +581,65 @@ p.copyright {
     font-weight: 200;
     font-size: 12pt;
     line-height: 1;
+    padding-top: 2rem;
 }
+
+
+
+/* Breakpoint */
+@media screen and (min-width: 600px) {
+
+    #highlight-1 {
+        margin-top: 28rem;
+    }
+
+}
+
+
+
+/* Breakpoint */
+@media screen and (min-width: 800px) {
+
+    h1 {
+        font-size: 48px;
+        max-width: 500px;
+    }
+    
+    .grid-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-inner figure {
+        margin: 1rem;
+    }
+
+    #highlight-1 {
+        margin-top: 12rem;
+    }
+
+    #highlight-2 img {
+        padding: 1rem;
+    }
+    
+    #highlight-2 h2 {
+        padding: 0rem 2rem;
+        margin-top: 0;
+    }
+    
+    #highlight-2 p {
+        padding: 2rem 2rem;
+    }
+
+    .callout {
+        min-width: 600px;
+        resize: both;
+        margin: 0;
+        justify-content: center;
+    }
+
+}
+
 
 
 /* Breakpoint */
@@ -639,8 +709,10 @@ p.copyright {
     .highlight {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background: rgb(7, 33, 94);
-        background: linear-gradient(180deg, rgb(25, 4, 119) 31%,  #13172b 88%);
+    }
+
+    #highlight-1 {
+        margin-top: 0rem;
     }
 
     .highlight h2 {
